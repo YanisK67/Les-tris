@@ -1,87 +1,85 @@
-# TP Python — Comparaison des algorithmes de tri
+# Comparaison et visualisation des algorithmes de tri en Python
 
-Projet réalisé par **Yanis KHELIF**.
 
-Ce projet implémente et compare trois algorithmes classiques de tri :
-- **Tri naïf** (tri par sélection avec tableau auxiliaire)
-- **Tri par sélection**
-- **Tri par insertion**
+Ce projet implémente et compare trois algorithmes classiques :
 
-Chaque algorithme est **instrumenté** afin de mesurer :
-- le nombre de **comparaisons**
-- le nombre d’**affectations**
-- le **temps d’exécution**
-- l’**historique des états intermédiaires**
+- Tri naïf - Tri par sélection  
+- Tri par insertion  
 
-Le projet inclut également :
-- des tests sur différentes tailles et configurations de listes
-- une **visualisation graphique** des performances
-- des **animations** illustrant le déroulement des tris
+Chaque algorithme mesure :
 
----
+- le nombre de comparaisons  
+- le nombre d’affectations  
+- le temps d’exécution  
+- l’historique des états intermédiaires  
 
-## 📁 Fichier du projet
+Le programme inclut également :
 
-- `tri_VF.py`  
-  Script Python unique contenant :
-  - l’implémentation des trois algorithmes de tri
-  - l’instrumentation complète (statistiques + historique)
-  - des tests comparatifs
-  - la génération de graphiques et d’animations
+- des tests sur différentes tailles de listes  
+- une comparaison graphique des performances  
+- des animations illustrant le déroulement des tris  
 
 ---
 
-## 🎯 Objectifs pédagogiques
+## Fichier principal
 
-- Comprendre le fonctionnement des principaux algorithmes de tri
-- Comparer leur efficacité selon :
-  - la taille de la liste
-  - l’ordre initial des données (aléatoire, trié, inversé)
-- Mettre en évidence les notions de :
-  - complexité algorithmique
-  - coût en opérations (comparaisons / affectations)
-- Visualiser pas à pas l’exécution des algorithmes
 
----
+**tri_comparatif.py**
 
-## 🧠 Algorithmes implémentés
+Ce nom est clair et conforme aux bonnes pratiques Python.
 
-### 🔹 Tri naïf
-- Recherche répétée du minimum
-- Utilisation d’un tableau auxiliaire
-- Complexité : **O(n²)**
-- Historique détaillé à chaque extraction du minimum
+Ce projet permet de :
 
-### 🔹 Tri par sélection
-- Recherche du minimum dans la partie non triée
-- Échange avec l’élément courant
-- Complexité : **O(n²)**
-- Moins d’affectations que le tri naïf
-
-### 🔹 Tri par insertion
-- Insertion progressive des éléments dans une partie déjà triée
-- Complexité :
-  - **O(n²)** dans le pire cas
-  - **O(n)** dans le meilleur cas (liste déjà triée)
+- comprendre le fonctionnement des principaux algorithmes de tri  
+- comparer leur efficacité selon :
+  - la taille de la liste  
+  - la configuration des données  
+- mettre en évidence la complexité algorithmique  
+- analyser le coût en opérations (comparaisons et affectations)  
+- visualiser pas à pas l’exécution des algorithmes  
 
 ---
 
-## 📊 Statistiques collectées
+## Complexité des algorithmes
 
-Pour chaque tri :
-- Temps d’exécution (en secondes)
-- Nombre de comparaisons
-- Nombre d’affectations
-- Historique des états intermédiaires de la liste
 
-Les résultats sont stockés dans un **dictionnaire** Python.
+| Algorithme | Complexité moyenne | Complexité pire cas |
+|-----------|-------------------|--------------------|
+| Tri naïf | O(n²) | O(n²) |
+| Tri sélection | O(n²) | O(n²) |
+| Tri insertion | O(n²) | O(n²) |
+| Tri insertion (meilleur cas) | O(n) | — |
+
+
+## Tests réalisés
+
+### Test simple
+
+Une liste courte est utilisée pour observer étape par étape le déroulement des tris.
+
+### Tests sur différentes tailles
+
+Des listes de différentes tailles sont générées automatiquement afin d’évaluer l’impact de la taille des données sur les performances.
 
 ---
 
-## 🧪 Tests réalisés
+## Visualisations produites
 
-### ✔️ Test simple
-- Liste courte pour observer étape par étape le déroulement des tris
 
-### ✔️ Tests sur différentes tailles
-- Tailles testées :
+Fichiers générés :
+
+- tri_naif.gif  
+- tri_selection.gif  
+- tri_insertion.gif  
+
+
+### Exécuter le programme
+
+
+python tri_comparatif.py
+```
+
+## Auteur
+
+Yanis Khelif  
+
