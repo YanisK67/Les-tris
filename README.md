@@ -26,17 +26,6 @@ Le programme inclut également :
 
 **tri_comparatif.py**
 
-Ce nom est clair et conforme aux bonnes pratiques Python.
-
-Ce projet permet de :
-
-- comprendre le fonctionnement des principaux algorithmes de tri  
-- comparer leur efficacité selon :
-  - la taille de la liste  
-  - la configuration des données  
-- mettre en évidence la complexité algorithmique  
-- analyser le coût en opérations (comparaisons et affectations)  
-- visualiser pas à pas l’exécution des algorithmes  
 
 ---
 
@@ -81,5 +70,5 @@ python tri_comparatif.py
 
 ## Auteur
 
-Yanis Khelif  
+Yanis Khelif  (Lycée Notre Dame Providence- Enghien les bains)
 
