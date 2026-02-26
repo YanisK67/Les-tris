@@ -68,7 +68,7 @@ Fichiers générés :
 python tri_comparatif.py
 ```
 
-## Auteur
+## Auteur 
 
 Yanis Khelif  (Lycée Notre Dame Providence- Enghien les bains)
 
